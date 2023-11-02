@@ -1,13 +1,31 @@
 # Are Emergent Abilities in Large Language Models just In-Context Learning?
-Sheng Lu, Irina Bigoulaeva, Rachneet Sachdeva, Harish Tayyar Madabushi, Iryna Gurevych
+Sheng Lu*, Irina Bigoulaeva*, Rachneet Sachdeva, Harish Tayyar Madabushi, Iryna Gurevych
+
+
 http://www.ukp.tu-darmstadt.de/
+
 [htm43@bath.ac.uk](mailto:htm43@bath.ac.uk)
+
+Access the paper at https://arxiv.org/abs/2309.01809
+
+Code available at [on GitHub](https://github.com/UKPLab/on-emergence) and data, including model outputs, available at [here](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/3931)
+
+[Watch a 15 minute talk detailing the paper at the ELLIS, AI4media, and AIDA Symposium on Large Language and Foundation Models](https://www.youtube.com/live/I_38YKWzHR8?si=hWoUr4ucFrT8sFUi&t=3111) 
+
+[![Talk Video](http://img.youtube.com/vi/I_38YKWzHR8/2.jpg)](http://www.youtube.com/watch?v=I_38YKWzHR8&t=3111)
+(talk starts at 51:51)
 
 ## Executive Summary and Implications
 Large Language Models (LLMs), which comprise billions of parameters and are trained on extensive web-scale corpora, have been claimed to acquire certain capabilities without ever having been trained on them. These capabilities, referred to as “[Emergent Abilities](https://openreview.net/pdf?id=yzkSU5zdwD),” have been a driving force in discussions regarding AI safety, since their occurrence is deemed to be latent and unpredictable. Although LLMs do pose various other risks, like the potential for generating fake news content or powering social media bots, it's their apparent potential to master new skills without being explicitly programmed to do so that has fostered concern regarding an existential threat to humanity, namely in the case where the emergent abilities are hazardous, such as autonomous reasoning and planning. These concerns have even prompted calls to halt the development of models capable of [emergent abilities for a period of six months](https://futureoflife.org/open-letter/pause-giant-ai-experiments/).
 
 However, [our research](https://arxiv.org/abs/2309.01809) offers a different perspective, addressing these concerns by revealing that the emergent abilities of LLMs, other than those which are linguistic abilities, are not inherently uncontrollable or unpredictable, as previously believed. Rather, our novel theory attributes them to the manifestation of LLMs’ability to complete a task based on a few examples, an ability referred to as "in-context learning" (ICL). We demonstrate that a combination of ICL, memory, and the emergence of linguistic abilities (linguistic proficiency) can account for both the capabilities and limitations exhibited by LLMs, thus showing the absence of emergent reasoning abilities in LLMs.
 
+
+
+Talk on  the paper at the ELLIS, AI4media, and AIDA Symposium on Large Language and Foundation Models, *Talk starts at timestamp 51:51*
+
+
+### Implications
 The implications of these findings are as follows:
 
 1.  By demonstrating the lack of emergent reasoning abilities in LLMs, our work underscores their user controllability. As a result, we show that these models can be deployed without concerns regarding latent hazardous abilities and the prospect of an existential threat.
@@ -32,7 +50,6 @@ The process of fine-tuning models on instructions, which typically includes data
 **In-Context Learning (ICL)**:
 The ability of LLMs to solve a task based on examples in the few-shot setting. We note that both base models and IT models can perform ICL. To ensure that we do not confuse this with indirect use of this ability, we call this “explicit” ICL.
 
-  
 
 ### Detailed summary of paper
 
@@ -107,8 +124,6 @@ Finally, our theory only uses those aspects of LLM capabilities that have alread
 
 ### FAQ
 
-  
-
 Do you evaluate ChatGPT?
 
 Yes. We evaluate text-davinci-003. which is the same model behind ChatGPT, but without the ability to "chat". This ensures that we can precisely measure models which provide direct answers and not chat-like dialogue.
@@ -119,7 +134,17 @@ What about GPT-4, as it is purported to have sparks of intelligence?
 
 Our results imply that the use of instruction-tuned models is not a good way of evaluating the inherent capabilities of a model. Given that the base version of GPT-4 is not made available, we are unable to run our tests on GPT-4. Nevertheless, the observation that GPT-4 also exhibits a propensity for hallucination and produces contradictory reasoning steps when "solving" problems (CoT)indicates that GPT-4 does not diverge from other models in this regard. We therefore expect that our findings hold true for GPT-4.
 
-Sheng Lu, Irina Bigoulaeva, Rachneet Sachdeva, Harish Tayyar Madabushi, Iryna Gurevych
 
-[htm43@bath.ac.uk](mailto:htm43@bath.ac.uk)
+### Citation
+If you find yourself building on this work, do consider citing us: 
 
+``` latex
+@misc{lu2023emergent,
+      title={Are Emergent Abilities in Large Language Models just In-Context Learning?}, 
+      author={Sheng Lu and Irina Bigoulaeva and Rachneet Sachdeva and Harish Tayyar Madabushi and Iryna Gurevych},
+      year={2023},
+      eprint={2309.01809},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
