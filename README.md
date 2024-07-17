@@ -1,10 +1,23 @@
-
 # Are Emergent Abilities in Large Language Models just In-Context Learning?
 Sheng Lu*, Irina Bigoulaeva*, Rachneet Sachdeva, Harish Tayyar Madabushi, Iryna Gurevych
 
-[Paper](https://arxiv.org/abs/2309.01809) | [Code](https://github.com/UKPLab/on-emergence) | [Data](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/3931)
+[Paper - Camera-Ready Version Accepted to ACL 2024](https://arxiv.org/abs/2309.01809) | [Paper - Long Version](https://github.com/H-TayyarMadabushi/Emergent_Abilities_and_in-Context_Learning/blob/main/EmergentAbilities-LongVersion.pdf)
+ 
+ [Code](https://github.com/UKPLab/on-emergence) | [Data](https://tudatalib.ulb.tu-darmstadt.de/handle/tudatalib/3931)
+
+ Join the discussion on [X (formally Twitter)](https://twitter.com/UKPLab/status/1699348822609060158)
 
 ## Updates
+
+### [July 2024] Accepted for publication at ACL 2024
+Peer review is now complete and the paper has been accepted for including in the proceedings of The 62nd Annual Meeting of the Association for Computational Linguistics (ACL 2024)!
+
+### [9 February 2024] Paper Presented at US Army Research Labs NLP Round Table Talks.
+The Paper presented as an invited talk as part of the US Army Research Labs NLP Round Table Talks.
+
+### [28 November 2023] Presented at The Alan Turing Institute, London.
+The paper was presented at the The Alan Turing Institute as an invited talk at the [Evaluating Foundation/Frontier Models workshop](https://sites.google.com/view/fm-eval-workshop/home).
+
 
 ### [25 October 2023] Frontier AI: capabilities and risks – discussion paper
 We are delighted that the paper this paper has been cited by the U.K. Department for Science Innovation and Technology's [Capabilities and risks from frontier AI: discussion paper](https://assets.publishing.service.gov.uk/media/65395abae6c968000daa9b25/frontier-ai-capabilities-risks-report.pdf) which was written to inform discussions at the [AI Safety Summit 2023](https://www.gov.uk/government/topical-events/ai-safety-summit-2023)
