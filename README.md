@@ -114,7 +114,7 @@ Having proposed an alternate theory explaining the functioning of LLMs, we show 
 
 We also show that our theory of how LLMs function (i.e., Implicit ICL), better explains the capabilities and limitations of existing LLMs:
 
--   Hallucinations in LLMs:  A significant shortcoming of LLMs is their propensity to generate content that is linguistically fluent but factually incorrect. This phenomenon, known as hallucination, can be explained through Implicit ICL as the model defaulting to the most statistically-likely output sequence when it is not provided with clear context (within the prompt) that it can appropriately convert to exemplars. If, on the other hand, models were indeed “emergent reasoning”, such hallucinations would not occur.
+-   Hallucinations in LLMs:  A significant shortcoming of LLMs is their tendency to generate content that is linguistically fluent but factually incorrect. This phenomenon, known as hallucination, can be explained through Implicit ICL as the model defaulting to the most statistically-likely output sequence when it is not provided with clear context (within the prompt) that it can appropriately convert to exemplars. If, on the other hand, models were indeed “emergent reasoning”, such hallucinations would not occur.
     
 -   The need for prompt engineering: We need to perform prompt engineering because models can only “solve” a task when the mapping from instructions to exemplars is optimal. This requires us to write the prompt in a manner that allows the model to perform this mapping. If models indeed had emergent reasoning capabilities, prompt engineering would be unnecessary: a model that has emergent complex reasoning capabilities should be able to interpret what is required of it despite minor variations in the prompt.
     
@@ -145,7 +145,7 @@ Yes. We evaluate text-davinci-003. which is the same model behind ChatGPT, but w
 
 *What about GPT-4, as it is purported to have sparks of intelligence?*
 
-Our results imply that the use of instruction-tuned models is not a good way of evaluating the inherent capabilities of a model. Given that the base version of GPT-4 is not made available, we are unable to run our tests on GPT-4. Nevertheless, the observation that GPT-4 also exhibits a propensity for hallucination and produces contradictory reasoning steps when "solving" problems (CoT)indicates that GPT-4 does not diverge from other models in this regard. We therefore expect that our findings hold true for GPT-4.
+Our results imply that the use of instruction-tuned models is not a good way of evaluating the inherent capabilities of a model. Given that the base version of GPT-4 is not made available, we are unable to run our tests on GPT-4. Nevertheless, the observation that GPT-4 also hallucinates and produces contradictory reasoning steps when "solving" problems (CoT)indicates that GPT-4 does not diverge from other models that we test. We therefore expect that our findings hold true for GPT-4.
 
 ## Contact
 Email: [htm43 AT bath.ac.uk](mailto:htm43@bath.ac.uk)
